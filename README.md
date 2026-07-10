@@ -28,10 +28,6 @@ A web-based Library Management System built using Laravel.
 4. Run migrations
 5. Start the development server
 
-## Screenshots
-
-(Add screenshots here)
-
 ## Author
 
 Your Name
