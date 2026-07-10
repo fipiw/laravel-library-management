@@ -1,54 +1,40 @@
-# Sistem Informasi Perpustakaan (UAS Pemrograman Web)
+# Library Management System
 
-Aplikasi berbasis **Laravel 11** untuk mengelola perpustakaan sekolah dengan single admin user. Tampilan dibangun mengikuti **DESIGN.md** (warm-canvas editorial design system) menggunakan Bootstrap 5 sebagai layout dasar yang seluruh visualnya di-override lewat `public/css/app.css`.
+A web-based Library Management System built using Laravel.
 
-## Fitur
+## Features
 
-**Wajib (sesuai soal UAS):**
-- Dashboard (jumlah buku, anggota, buku dipinjam, buku tersedia)
-- CRUD Data Buku, CRUD Data Anggota
-- Transaksi Peminjaman & Pengembalian buku
-- Laporan transaksi
+- Dashboard
+- Book Management
+- Member Management
+- Loan Management
+- Return Management
+- Reports
+- Authentication
 
-**Nilai plus yang ditambahkan:**
-- Level 1: Upload cover buku, pagination, search (buku & anggota)
-- Level 2: Export PDF (DomPDF), Export Excel (Maatwebsite Excel), Grafik dashboard (Chart.js)
-- Level 3: QR Code buku, Barcode buku (Code128 SVG)
-- Tambahan: Notifikasi stok habis, perhitungan denda keterlambatan otomatis
+## Tech Stack
 
-## Kebutuhan Sistem
-- PHP >= 8.2 dengan ekstensi: pdo_mysql, mbstring, gd, fileinfo, zip
-- Composer 2.x
-- MySQL 8 / MariaDB
-- Node tidak wajib (tidak ada build asset, seluruh CSS/JS plain + CDN)
+- Laravel
+- PHP
+- MySQL
+- Bootstrap
+- JavaScript
 
-## Instalasi
+## Installation
 
-```bash
-# 1. Install dependency PHP
-composer install
+1. Clone repository
+2. Install Composer dependencies
+3. Configure `.env`
+4. Run migrations
+5. Start the development server
 
-# 2. Salin file environment lalu sesuaikan kredensial database
-cp .env.example .env
-php artisan key:generate
+## Screenshots
 
-# Edit .env:
-# DB_DATABASE=perpustakaan
-# DB_USERNAME=root
-# DB_PASSWORD=
+(Add screenshots here)
 
-# 3. Buat database "perpustakaan" di MySQL, lalu jalankan migration + seeder
-php artisan migrate --seed
+## Author
 
-# 4. Buat symlink storage agar cover buku bisa diakses publik
-php artisan storage:link
-
-# 5. Jalankan server
-php artisan serve
-```
-
-Buka `http://127.0.0.1:8000` lalu login dengan akun admin hasil seeder:
-
+Your Name
 ```
 Email    : admin@perpus.test
 Password : password
