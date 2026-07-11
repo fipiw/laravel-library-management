@@ -28,9 +28,8 @@ A web-based Library Management System built using Laravel.
 4. Run migrations
 5. Start the development server
 
-## Author
+## Log In
 
-Your Name
 ```
 Email    : admin@perpus.test
 Password : password
